@@ -18,10 +18,11 @@ struct TopLevelDictionary: Decodable {
         
     }
     
+    let abilities: [AbilityDict]
     let name: String
     let id: Int
     let spriteDict: SpriteDict
-    let abilites: [AbilityDict]
+    
 }
 
 struct SpriteDict: Decodable {

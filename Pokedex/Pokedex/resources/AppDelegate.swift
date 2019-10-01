@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        PokemonController.fetchPokemon(with: "25") { (pokemon) in
+            print(pokemon?.name)
+            print(pokemon?.abilities[0].ability.name)
+        }
         return true
     }
 
